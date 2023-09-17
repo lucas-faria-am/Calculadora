@@ -1,13 +1,25 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args){
         Calculadora calculadora = new Calculadora();
         ErroTratativas erroTrat = new ErroTratativas();
+        Scanner leitor = new Scanner(System.in);
 
+        double num1, num2;
+
+        System.out.println("Digite o primeiro número: ");
+        num1 = leitor.nextDouble();
+
+        System.out.println("Digite o segundo número: ");
+        num2 = leitor.nextDouble();
+        
+        
  
-        double soma = calculadora.somar(5,3);
-        double sub = calculadora.subtrair(5, 3);
-        double multi = calculadora.multiplicar(5 ,3);
-        double div = calculadora.dividir(5 ,0);
+        double soma = calculadora.somar(num1,num2);
+        double sub = calculadora.subtrair(num1, num2);
+        double multi = calculadora.multiplicar(num1 ,num2);
+        double div = calculadora.dividir(num1 ,num2);
     
         
 
