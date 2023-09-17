@@ -33,5 +33,7 @@ public class App {
             erroTrat.tratarErro(e);
         }
 
+        leitor.close();
+
     }
 }
