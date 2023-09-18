@@ -1,7 +1,7 @@
 package main;
 import java.util.Scanner;
 
-import Uteis.Calculadora;
+import uteis.Calculadora;
 
 
 public class App {
