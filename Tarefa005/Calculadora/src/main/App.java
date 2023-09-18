@@ -18,7 +18,7 @@ public class App {
 
         double num1, num2;
 
-        while (opcao != 5) {
+        while (true) {
 
             menu.mostrarMenu();
 
