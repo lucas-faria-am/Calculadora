@@ -14,21 +14,12 @@ public class App {
         System.out.println("Digite o segundo número: ");
         num2 = leitor.nextDouble();
         
-        
- 
-        double soma = calculadora.somar(num1,num2);
-        double sub = calculadora.subtrair(num1, num2);
-        double multi = calculadora.multiplicar(num1 ,num2);
-        double div = calculadora.dividir(num1 ,num2);
-    
-        
 
         try {
-            System.out.println("Soma: " + soma);
-            System.out.println("Subtração: " + sub);
-            System.out.println("Multiplicação: "+ multi);
-            System.out.println("Divisão: " + div);
-
+            System.out.println("Soma: " + calculadora.somar(num1,num2));
+            System.out.println("Subtração: " + calculadora.subtrair(num1, num2));
+            System.out.println("Multiplicação: "+ calculadora.multiplicar(num1 ,num2));
+            System.out.println("Divisão: " + calculadora.dividir(num1 ,num2));
         } catch (ArithmeticException e) {
             erroTrat.tratarErro(e);
         }
