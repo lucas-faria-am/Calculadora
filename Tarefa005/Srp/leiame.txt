@@ -1,0 +1,7 @@
+A ideia do SRP é que "Uma classe deve ter apenas um motivo para mudar".
+Isso significa que uma classe deve ter uma única responsabilidade ou motivo para ser alterada. 
+Em outras palavras, uma classe deve ter uma única função ou tarefa bem definida. 
+Manter essa responsabilidade única torna o código mais coeso, facilita a manutenção e reduz o 
+risco de introduzir erros quando você precisa fazer alterações no código.
+No nosso projeto o srp esta incluindo no calculadora separando as funções menu e erroTratativas 
+enquanto em calculadoraMono esta incluido todas as funções sem a seperação ideal.
