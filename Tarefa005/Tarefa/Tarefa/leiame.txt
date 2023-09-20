@@ -1,0 +1,9 @@
+O Princípio do Aberto/Fechado (OCP) é um dos princípios SOLID, que visa tornar o código mais flexível e fácil de manter. 
+O OCP afirma que "entidades de software (classes, módulos, funções, etc.) devem ser abertas para extensão mas fechadas para modificação".
+Ou seja, o código deve ser projetado de forma que seja possível adicionar novos comportamentos sem alterar o código. Isso pode ser feito utilizando abstrações e polimorfismo.
+Nesse exemplo utilizamos  uma classe Animal. 
+Cada animal possui suas características e maneiras distintas de realizar suas funcionalidades. 
+Um código que não aplica o princípio OCP ficaria amarrado à classe e não seria possível aplicar funcionalidades sem quebrar ou modificar outras implementações da classe Animal.
+Com essas modificações o  código poderia ficar mais complexo e difícil de entender e também mais propenso a erros.
+Com a inplementação da herança e de uma classe abstrata, a classe Animal pode ser escalável, pois a implantação da herança possibilita criar diferentes tipos de animais com a herança e ter diferentes comportamentos para a mesma ação com o método abstrato da classe pai. 
+Exemplo:  O cachorro anda mas o pássaro voa, nesse caso o método abstrato mover pode ser implementado de diferentes maneiras em ambas as classes. 

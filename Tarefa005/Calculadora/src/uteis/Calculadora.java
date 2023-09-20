@@ -1,22 +1,48 @@
 package uteis;
 
 public class Calculadora {
-    public double somar(double num1, double num2) {
-        return num1 + num2;
+
+    private double num1;
+    private double num2;
+   
+    public Calculadora () {
+
+    }
+
+    public Calculadora (Double num1, Double num2) {
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    public double getNum1 () {
+        return num1;
+    }
+
+    public double getNum2 () {
+        return num2;
+    }
+
+    public void setNum1(double num1) {
+        this.num1 = num1;
+    }
+
+    public void setNum2(double num2) {
+        this.num2 = num2;
+    }
+
+
+    public double somar() {
+       return  this.num1 + this.num2;
     }
     
-    public double subtrair(double num1, double num2) {
-        return num1 - num2;
+    public double subtrair() {
+        return  this.num1 - this.num2;
     }
 
-    public double multiplicar(double num1, double num2) {
-        return num1 * num2;
-    }
-
-    public double dividir(double num1, double num2) {
-        if(num2 == 0) {
+    public double dividir() {
+        if(this.num2 == 0) {
             throw new ArithmeticException("Erro: Não é possivel dividir por zero!");
         }
-        return num1 / num2;
+        return  this.num1 / this.num2;
     }
 }
